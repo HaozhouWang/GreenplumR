@@ -852,6 +852,7 @@ test_that("Test consistency of database objects", {
                     clear.existing = TRUE, language = .language)
     stop("can't be here")
     }, error = function(e) {
+       print("Expected error detected")
     }, finally = {
     })
 
